@@ -1,0 +1,11 @@
+name: energy-environment
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - numpy
+  - matplotlib
+    # works with pandas 1.3.5, newer versions have issues hashing the country Series
+  - pandas=1.3.5
+  - notebook
+  - openpyxl  
