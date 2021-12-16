@@ -17,3 +17,9 @@ conda env export -f environment.yml
 
 Note that the only libraries available to you will be the ones specified in
 the `environment.yml`, so be sure to include everything else that you need!
+
+## TODOs
+The xlsx report from 2020 has a missing blank char on the Wind Generation sheet name. In 2021 report
+that has been fixed and that's mostly the only difference in the two 'notebooks'.
+Current setup uses an older pandas version, mostly because newer versions don't yeld the right results on
+hashing the 'country' columns into an usable key for pandas DataFrame.
